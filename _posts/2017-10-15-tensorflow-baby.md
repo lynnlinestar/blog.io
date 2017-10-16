@@ -17,9 +17,11 @@ Tensorflow is a ML framework
 import tensorflow as tf
 ```
 
-### Basic module
+### Test Typora markdown in ubuntu
 
 ```python
-import numpy as np
+print('test')
 ```
+
+
 
