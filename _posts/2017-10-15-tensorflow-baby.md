@@ -29,11 +29,11 @@ import tensorflow as tf
 
 - 为移动/嵌入式系统创建和训练模型
 
-### 测试一下
+### 第一个例子
 
 ```python
+import pylab
 import tensorflow as tf
-import numpy as np
 import matplotlib.pyplot as plt
 
 a = tf.random_normal([2,20])
@@ -45,10 +45,18 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-### 测试一下上传图片哈哈
-![105531.88211638_1000X1000.jpg](https://www.z4a.net/images/2017/10/17/105531.88211638_1000X1000.jpg)
+[![Figure_1-1.png](http://www.z4a.net/images/2017/10/18/Figure_1-1.png)](http://www.z4a.net/image/ZxrYb)
 
+*必须加入下面这句，虽然没引用到，但如果不加会报错*
 
+```python
+import pylab
+```
 
+*如果不加就报这个错*
 
+`RuntimeError: Could not create write struct`
 
+如果使用jupyter notebook，直接运行不了，报上述错误
+
+如果直接整段跑py代码，可以显示图片，但如果想保存为png，一样报错
